@@ -9,8 +9,9 @@
 </template>
 
 <style lang="scss">
+@import "./assets/scss/tipografia.scss";
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: $inter;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
