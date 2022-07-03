@@ -23,6 +23,8 @@ export default {
 
 <style lang="scss">
 @import "./assets/scss/tipografia.scss";
+@import "./assets/scss/colores.scss";
+
 #app {
   font-family: $inter;
   -webkit-font-smoothing: antialiased;
@@ -30,6 +32,11 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
+
+body {
+  background-color: $primario;
+}
+
 
 
 </style>

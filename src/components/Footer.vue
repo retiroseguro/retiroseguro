@@ -1,5 +1,5 @@
 <template>
-  <p>RSE</p>
+<p>RSE</p> 
 </template>
 
 <script>
