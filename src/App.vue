@@ -1,15 +1,30 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
+    <Menu/>
     <router-view/>
+    <Footer/>
   </div>
 </template>
 
+<script>
+
+import Footer from './components/Footer.vue';
+import Menu from './components/Menu.vue';
+
+export default {
+  name: "App", 
+  components:{
+    Menu,
+    Footer
+  },
+}
+</script>
+
+
 <style lang="scss">
 @import "./assets/scss/tipografia.scss";
+@import "./assets/scss/colores.scss";
+
 #app {
   font-family: $inter;
   -webkit-font-smoothing: antialiased;
@@ -18,16 +33,10 @@
   color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+body {
+  background-color: $primario;
 }
+
+
+
 </style>
