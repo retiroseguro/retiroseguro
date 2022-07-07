@@ -11,7 +11,7 @@
       <div class="nav__links">
         <a href="" class="nav__links_buscar">Buscar</a>
         <a href="Apoderado">Perfil</a>
-        <a href="">Cerrar sesión</a>
+        <a href="">Cerrar sesi</a>
       
       </div>
     </nav>
