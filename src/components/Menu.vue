@@ -59,8 +59,8 @@ nav {
   }
 
   .nav__icons_perfil {
-    display:none;
-    // display:block (aparece en vista de apoderado y estudiante)
+    // display:none;
+    display:block (aparece en vista de apoderado y estudiante)
   }
 
   @media only screen and (min-width: 320px) {
