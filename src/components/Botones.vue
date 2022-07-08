@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button>
+    <button type="button" class="btn btn-fondo btn-lg">
         ENVIAR
     </button>
   </div>
@@ -12,6 +12,18 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import "../assets/scss/colores.scss";
+@import "../assets/scss/tipografia.scss";
 
+.btn-fondo {
+    background-color: $secundario;
+}
+.btn {
+    color: $blanco;
+    font-family: $inter;
+}
+.btn:hover{
+  color: $blanco !important;
+}
 </style>
