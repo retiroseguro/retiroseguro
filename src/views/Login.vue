@@ -36,7 +36,7 @@ name: "Login",
 .p__pass {
   padding-top: 20px;
   font-family: $inter;
-  font-size: 1rem;
+  font-size: 16px;
 
 }
 button {
