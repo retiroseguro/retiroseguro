@@ -10,6 +10,12 @@ name: "Input"
 }
 </script>
 
-<style>
+<style lang="scss">
+
+input {
+  padding: 6px;
+  border-radius: 8px;
+  border: 1px;
+}
 
 </style>

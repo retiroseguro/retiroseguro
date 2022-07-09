@@ -2,9 +2,6 @@
   <div id="app">
     <Menu/>
     <router-view/>
-    <Input/>
-
-    <Botones/>
     <Footer/>
   </div>
 </template>
@@ -13,16 +10,12 @@
 
 import Footer from './components/Footer.vue';
 import Menu from './components/Menu.vue';
-import Botones from './components/Botones.vue';
-import Input  from  './components/Input.vue';
 
 export default {
   name: "App", 
   components:{
     Menu,
     Footer,
-    Botones,
-    Input,
 
   },
 }
