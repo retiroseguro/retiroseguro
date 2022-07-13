@@ -4,7 +4,10 @@
       <Input/>
     <p class="p__pass">Contraseña</p>
       <Input/>
-      <Botones/>
+      <div class="login__botones_posicion">
+        <Botones/>
+      </div>
+      
     <div>
       <img class="img_bg__login" src="../assets/img/bg_login.svg" alt="bg">
     </div>
@@ -39,7 +42,7 @@ name: "Login",
   font-size: 16px;
 
 }
-button {
+.login__botones_posicion {
   margin-top: 40px;
 }
 
