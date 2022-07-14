@@ -5,7 +5,7 @@
     <p class="p__pass">Contraseña</p>
       <input type="password">
       <div class="login__botones_posicion">
-        <Botones/>
+        <router-link to="/Apoderado"><Botones/></router-link>
       </div>
       
     <div>
