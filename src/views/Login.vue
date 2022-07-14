@@ -1,9 +1,9 @@
 <template>
   <div>
     <p class="login__p_run">Rut</p>
-      <input type="number">
+      <input type="text" id="rut" name="rut" placeholder="11.222.333-4">
     <p class="login__p_pass">Contraseña</p>
-      <input type="password">
+      <input type="password" placeholder="xxxxxx">
       <div class="login__botones_posicion">
         <router-link to="/Apoderado"><Botones/></router-link>
       </div>
