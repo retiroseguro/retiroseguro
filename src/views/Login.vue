@@ -1,9 +1,9 @@
 <template>
   <div>
     <p class="p__run">Rut</p>
-      <Input/>
+      <input type="number">
     <p class="p__pass">Contraseña</p>
-      <Input/>
+      <input type="password">
       <div class="login__botones_posicion">
         <Botones/>
       </div>
