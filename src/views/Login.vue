@@ -1,10 +1,13 @@
 <template>
   <div>
     <p class="p__run">Rut</p>
-      <Input/>
+      <input type="number">
     <p class="p__pass">Contraseña</p>
-      <Input/>
-      <Botones/>
+      <input type="password">
+      <div class="login__botones_posicion">
+        <router-link to="/Apoderado"><Botones/></router-link>
+      </div>
+      
     <div>
       <img class="img_bg__login" src="../assets/img/bg_login.svg" alt="bg">
     </div>
@@ -39,7 +42,7 @@ name: "Login",
   font-size: 16px;
 
 }
-button {
+.login__botones_posicion {
   margin-top: 40px;
 }
 
