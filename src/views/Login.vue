@@ -1,15 +1,15 @@
 <template>
   <div>
-    <p class="p__run">Rut</p>
+    <p class="login__p_run">Rut</p>
       <input type="number">
-    <p class="p__pass">Contraseña</p>
+    <p class="login__p_pass">Contraseña</p>
       <input type="password">
       <div class="login__botones_posicion">
         <router-link to="/Apoderado"><Botones/></router-link>
       </div>
       
     <div>
-      <img class="img_bg__login" src="../assets/img/bg_login.svg" alt="bg">
+      <img class="login__img_bg" src="../assets/img/bg_login.svg" alt="bg">
     </div>
   </div>
 </template>
@@ -31,12 +31,12 @@ name: "Login",
 @import "../assets/scss/tipografia.scss";
 
 @media only screen and (min-width: 320px) {
-.p__run {
+.login__p_run {
     padding-top: 30px;
     font-family: $inter;
     font-size: 1rem;
 }
-.p__pass {
+.login__p_pass {
   padding-top: 20px;
   font-family: $inter;
   font-size: 16px;
@@ -66,7 +66,7 @@ name: "Login",
 
 }
 @media only screen and (min-width: 992px) {
-  .img_bg__login {
+  .login__img_bg {
       width: 310px;
       opacity: 30%;
       filter: saturate(0.5);
