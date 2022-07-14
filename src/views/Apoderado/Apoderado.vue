@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <div class="resumen_ap">
+    <main class="apoderado">
+        <div class="apoderado__resumen">
             <div class="foto_perfil">
                 <img src="@/assets/img/perfil_blanco.png" alt="foto_perfil">
             </div>
@@ -58,7 +58,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 </template>
 
 <script>
@@ -81,7 +81,7 @@ h5{
     text-align: left;
 }
 
-.resumen_ap {
+.apoderado__resumen {
     padding-top: 2.5rem;
     padding-bottom: 1rem;
     color: $blanco;
