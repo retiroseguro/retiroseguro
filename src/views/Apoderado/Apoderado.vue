@@ -2,7 +2,7 @@
     <div>
         <div class="resumen_ap">
             <div class="foto_perfil">
-                <img src="../assets/img/perfil_blanco.png" alt="foto_perfil">
+                <img src="@/assets/img/perfil_blanco.png" alt="foto_perfil">
             </div>
             <div class="info_ap">
                 <p>Nombre: <span>Pedro Rojas Toledo</span></p>
@@ -15,11 +15,11 @@
             <h5>Información Estudiante(s)</h5>
             <div class="barra_est">
                 <p>Estudiante</p>
-                <router-link to="/listaEstudiantes"><img class="icon_agregar" src="../assets/img/agregar.png" alt="agregar"></router-link>
+                <router-link to="/listaEstudiantes"><img class="icon_agregar" src="@/assets/img/agregar.png" alt="agregar"></router-link>
             </div>
             <div class="tarjeta_blanca">
                 <div class="foto_perfil">
-                    <img src="../assets/img/perfil_blanco.png" alt="foto perfil">
+                    <img src="@/assets/img/perfil_blanco.png" alt="foto perfil">
                 </div>
                 <div class="info_est">
                     <p>Nombre: <span>Felipe Rojas Sotomayor</span></p>
@@ -28,7 +28,7 @@
                     <p>Profesor Jefe: <span>Mónica Soto</span></p> 
                 </div>
                 <div class="editar">
-                    <router-link to="/estudiante/:id"><img src="../assets/img/editar.png" alt="editar"></router-link>
+                    <router-link to="/estudiante/:id"><img src="@/assets/img/editar.png" alt="editar"></router-link>
                 </div>
                 <div class="link">
                     <router-link to="/estudiante/:id">Ver Perfil</router-link>
@@ -39,11 +39,11 @@
             <h5>Información Retirador(es)</h5>
             <div class="barra_ret">
                 <p>Retirador</p>
-                <router-link to="/agregarRetirador"><img class="icon_agregar" src="../assets/img/agregar.png" alt="agregar"></router-link>
+                <router-link to="/agregarRetirador"><img class="icon_agregar" src="@/assets/img/agregar.png" alt="agregar"></router-link>
             </div>
             <div class="tarjeta_blanca">
                 <div class="foto_perfil">
-                    <img src="../assets/img/perfil_blanco.png" alt="foto perfil">
+                    <img src="@/assets/img/perfil_blanco.png" alt="foto perfil">
                 </div>
                 <div class="info_est">
                     <p>Nombre: <span>Javier Rojas Toledo</span></p>
@@ -51,7 +51,7 @@
                     <p>Teléfono: <span>+56 9 5784 7366</span></p>
                 </div>
                 <div class="editar">
-                    <router-link to="/retirador/:id"><img src="../assets/img/editar.png" alt="editar"></router-link>
+                    <router-link to="/retirador/:id"><img src="@/assets/img/editar.png" alt="editar"></router-link>
                 </div>
                 <div class="link">
                     <router-link to="/retirador/:id">Ver Perfil</router-link>
@@ -68,8 +68,8 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../assets/scss/tipografia.scss";
-@import "../assets/scss/colores.scss";
+@import "@/assets/scss/tipografia.scss";
+@import "@/assets/scss/colores.scss";
 
 p {
     font-family: $inter;
