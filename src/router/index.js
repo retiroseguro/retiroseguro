@@ -19,11 +19,25 @@ const routes = [
   },
   {
     path: '/apoderado',
-    name: 'apoderado',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Apoderado/Apoderado.vue')
+    // which is lazy-loaded when the route is visited. 
+    component: () => import(/* webpackChunkName: "about" */ '../views/Fantasma.vue'),
+    children: [ 
+      {
+        path: '',
+        name: 'apoderado',
+        component: () => import(/* webpackChunkName: "about" */ '../views/Apoderado/Apoderado.vue'),
+      },
+      {
+        path: 'editar-perfil',
+        component: () => import( /* webpackChunkName: "about" */ '../views/Apoderado/EditarPerfil.vue'),
+      },
+      {
+        path: 'ActualizarFoto',
+        component: () => import(/* webpackChunkName: "about" */ '../views/Apoderado/ImagenEstudiante.vue'),
+      }
+    ]
   },
   {
     path: '/profesor',
