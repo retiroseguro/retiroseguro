@@ -9,9 +9,9 @@
       </div>
 
       <div class="nav__links">
-        <a href="" class="nav__links_buscar">Buscar</a>
-        <a href="Apoderado">Perfil</a>
-        <a href="">Cerrar sesión</a>
+        <router-link to="/Administrador"><a href="" class="nav__links_buscar">Buscar</a></router-link>
+        <router-link to="/Apoderado"><a href="" class="nav__links_perfil">Perfil</a></router-link>
+        <router-link to="/"><a href="">Cerrar sesión</a></router-link>
       
       </div>
     </nav>
@@ -55,7 +55,12 @@ nav {
   }
 
   .nav__links_buscar{
-        margin-left: -20%;
+        margin-left: -55%;
+  }
+
+  .nav__links_perfil{
+        margin-left: -32%;
+
   }
 
   .nav__icons_perfil {
