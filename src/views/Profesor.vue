@@ -1,35 +1,22 @@
 <template>
 <div class="container">
-    <center> 
         <div class="texto">Buscar por:</div>
         <br><br>
-        <div class="ordenar">
-            <div class="custom-control custom-radio">
-                <input id="nombre" Type="radio" class="custom-control-input muestraOculta" name="datos" checked="checked">
-                <label for="nombre" class="custom-control-label texto">Nombre del Alumno</label>
+
+            <div>
+            <label><input type="radio" v-model="buscar" value="rut"> rut</label>
+            <label><input type="radio" v-model="buscar" value="nombre"> nombre</label>
+            <label><input type="radio" v-model="buscar" value="curso"> curso</label>
             </div>
-            <div class="custom-control custom-radio">
-                <input id="rut" Type="radio" class="custom-control-input muestraOculta" name="datos">
-                <label for="rut" class="custom-control-label texto">Rut</label>
+            <div v-if="buscar == 'rut'">
+                <input type="text" id="rut" name="rut" placeholder="11.222.333-4">
             </div>
-            <div class="custom-control custom-radio">
-                <input  id="curso" Type="radio" class="custom-control-input muestraOculta" name="datos">
-                <label for="curso" class="custom-control-label texto">Curso</label>
+            <div v-if="buscar == 'nombre'">
+                <input type="text" id="nombre" name="nombre" placeholder="Ingresa Nombre">
             </div>
-        </div>
-        <br><br>
-    
-        <div id="mostrarnombre" class="muestraDiv"><input type="text" placeholder="Ingrese Nombre del Alumno" size="30"></div>
-        <div id="mostrarrut" class="muestraDiv"><input type="text" placeholder="Ingrese Rut del Alumno" size="30"></div>
-        <div id="mostrarcurso" class="muestraDiv">
-            <select class="form-select form-select-sm" aria-label=".form-select-sm example" style="width:255px">
-                <option selected>Seleccione el curso</option>
-                <option value="1">1°A</option>
-                <option value="2">2°B</option>
-                <option value="3">Three</option>
-              </select>            
-        </div>
-    </center>
+            <div v-if="buscar == 'curso'">
+            curso
+            </div>
     <Botones class="mt-4"/>
 
 </div>
@@ -43,6 +30,11 @@ export default {
     components:{
         Input,
         Botones,
+    },
+    data() {
+        return {
+            buscar: null
+        }
     },
 };
 
