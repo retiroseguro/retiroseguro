@@ -10,7 +10,7 @@
 
       <div class="nav__links">
         <router-link to="/Administrador"><a href="" class="nav__links_buscar">Buscar</a></router-link>
-        <router-link to="/Apoderado"><a href="" class="nav__links_perfil">Perfil</a></router-link>
+        <router-link to="/apoderado/editar-perfil"><a href="" class="nav__links_perfil">Perfil</a></router-link>
         <router-link to="/"><a href="">Cerrar sesión</a></router-link>
       
       </div>

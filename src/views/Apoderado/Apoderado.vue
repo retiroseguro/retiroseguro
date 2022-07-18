@@ -39,7 +39,7 @@
             <h5>Información Retirador(es)</h5>
             <div class="barra_ret">
                 <p>Retirador</p>
-                <router-link to="/agregarRetirador"><img class="icon_agregar" src="@/assets/img/agregar.png" alt="agregar"></router-link>
+                <router-link to="apoderado/agregaRetirador"><img class="icon_agregar" src="@/assets/img/agregar.png" alt="agregar"></router-link>
             </div>
             <div class="tarjeta_blanca">
                 <div class="foto_perfil">

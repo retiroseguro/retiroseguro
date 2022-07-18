@@ -3,13 +3,13 @@
     <main class="admin">
       <p>Buscar apoderado</p>
       <Input />
-      <Botones class="mt-4"/>
+      <router-link to="/Apoderado"><Botones class="mt-4"/></router-link>
     </main>
   </div>
 </template>
 <script>
-import Input from "../components/Input.vue";
-import Botones from "../components/Botones.vue";
+import Input from "../../components/Input.vue";
+import Botones from "../../components/Botones.vue";
 export default {
   name: "Admin",
   components: {

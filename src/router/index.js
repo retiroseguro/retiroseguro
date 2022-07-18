@@ -11,11 +11,21 @@ const routes = [
   },
   {
     path: '/administrador',
-    name: 'administrador',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Admin.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/Fantasma.vue'),
+    children: [
+      {
+        path:'',
+        name:'administrador',
+        component: () => import(/* webpackChunkName: "about" */ '../views/Administrador/Admin.vue'),
+      },
+      {
+        path:'editarapoderado',
+        component: () => import(/* webpackChunkName: "about" */ '../views/Administrador/EditarApoderado.vue'),
+      }
+    ]
   },
   {
     path: '/apoderado',
@@ -34,8 +44,13 @@ const routes = [
         component: () => import( /* webpackChunkName: "about" */ '../views/Apoderado/EditarPerfil.vue'),
       },
       {
-        path: 'ActualizarFoto',
+        path: 'actualizarFoto',
         component: () => import(/* webpackChunkName: "about" */ '../views/Apoderado/ImagenEstudiante.vue'),
+      },
+      {
+        path: 'agregaRetirador',
+        component: () => import(/* webpackChunkName: "about" */ '../views/Apoderado/NuevoRetirador.vue'),
+
       }
     ]
   },
