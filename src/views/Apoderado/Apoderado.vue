@@ -15,7 +15,7 @@
             <h5>Información Estudiante(s)</h5>
             <div class="barra_est">
                 <p>Estudiante</p>
-                <router-link to="/listaEstudiantes"><img class="icon_agregar" src="@/assets/img/agregar.png" alt="agregar"></router-link>
+                <router-link to="/listaEstudiantes"><img class="icon_agregar" src="@/assets/img/plus-circle.svg" alt="agregar"></router-link>
             </div>
             <div class="tarjeta_blanca">
                 <div class="foto_perfil">
@@ -28,7 +28,7 @@
                     <p>Profesor Jefe: <span>Mónica Soto</span></p> 
                 </div>
                 <div class="editar">
-                    <router-link to="/estudiante/:id"><img src="@/assets/img/editar.png" alt="editar"></router-link>
+                    <router-link to="/estudiante/:id"><img src="@/assets/img/edit.svg" alt="editar"></router-link>
                 </div>
                 <div class="link">
                     <router-link to="/estudiante/:id">Ver Perfil</router-link>
@@ -39,7 +39,7 @@
             <h5>Información Retirador(es)</h5>
             <div class="barra_ret">
                 <p>Retirador</p>
-                <router-link to="apoderado/agregaRetirador"><img class="icon_agregar" src="@/assets/img/agregar.png" alt="agregar"></router-link>
+                <router-link to="apoderado/agregaRetirador"><img class="icon_agregar" src="@/assets/img/plus-circle.svg" alt="agregar"></router-link>
             </div>
             <div class="tarjeta_blanca">
                 <div class="foto_perfil">
@@ -51,7 +51,7 @@
                     <p>Teléfono: <span>+56 9 5784 7366</span></p>
                 </div>
                 <div class="editar">
-                    <router-link to="/retirador/:id"><img src="@/assets/img/editar.png" alt="editar"></router-link>
+                    <router-link to="/retirador/:id"><img src="@/assets/img/edit.svg" alt="editar"></router-link>
                 </div>
                 <div class="link">
                     <router-link to="/retirador/:id">Ver Perfil</router-link>
