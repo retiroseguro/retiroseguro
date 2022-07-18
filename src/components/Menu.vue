@@ -10,7 +10,7 @@
 
       <div class="nav__links">
       <router-link to="/Administrador"><a href="" class="nav__links_buscar">Buscar</a></router-link>
-      <router-link to="/apoderado/editar-perfil"><a href="" class="nav__links_perfil">Perfil</a></router-link>
+      <router-link to="/administrador/editarapoderado"><a href="" class="nav__links_perfil">Perfil</a></router-link>
       <router-link to="/"><a href="">Cerrar sesión</a></router-link>
       
       </div>
@@ -56,9 +56,13 @@ nav {
         margin-left: -55%;
   }
 
-.nav__icons_perfil {
-  margin-top: 3px;
-  margin-right: 10px;
+  .nav__links_perfil {
+    margin-right: 25px;
+  }
+
+  .nav__icons_perfil {
+    margin-top: 3px;
+    margin-right: 10px;
   }
   .nav__icons_perfil {
     // display:none;

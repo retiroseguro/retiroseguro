@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="login">
     <p class="login__p_run">Rut</p>
       <input type="text" id="rut" name="rut" placeholder="11.222.333-4">
     <p class="login__p_pass">Contraseña</p>
@@ -31,6 +31,12 @@ name: "Login",
 @import "../assets/scss/tipografia.scss";
 
 @media only screen and (min-width: 320px) {
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .login__p_run {
     padding-top: 30px;
     font-family: $inter;
@@ -46,7 +52,7 @@ name: "Login",
   margin-top: 40px;
 }
 
-.img_bg__login {
+.login__img_bg {
     padding: 17px;
     width: 280px;
     opacity: 30%;

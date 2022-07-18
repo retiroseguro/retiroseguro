@@ -21,5 +21,8 @@ export default {
 <style lang="scss">
 .admin {
   margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 </style>
