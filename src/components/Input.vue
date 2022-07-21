@@ -1,6 +1,6 @@
 <template>
   <div>
-    <input type="text">
+    <input type="text" id="rut" name="rut"  placeholder="11.111.222-3">
   </div>
 </template>
 

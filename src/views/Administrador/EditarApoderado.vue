@@ -1,9 +1,9 @@
 <template>
-<div class="editarperfil">
+<div>
+    <div class="editarperfil">
     <h2>Actualizacion de datos personales</h2>
 
-    <form class="form"> 
-    <!-- datos fijos solo se cambia la foto -->
+    <form class="form">
     <div>
         <label for="nombre" class="form_label">Nombre</label> <br />
         <input 
@@ -61,17 +61,14 @@
             placeholder="(+56)957847366"
         />
     </div>
-<br>
-    <div>
-        <p>SUBIR FOTO</p>
-    </div>
 
     <div class="edit_boton">
-        <router-link to="/Apoderado"><Botones /></router-link>
+        <router-link to="/Apoderado"><Botones/></router-link>
     </div>
 
     
     </form>
+</div>
 </div>
 </template>
 
