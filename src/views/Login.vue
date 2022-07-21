@@ -72,7 +72,7 @@ name: "Login",
       filter: saturate(0.5);
       display: flex;
       margin-left: 68px;
-      margin-top: -200px;
+      margin-top: -180px;
   }
 }
 

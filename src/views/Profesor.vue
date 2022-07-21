@@ -1,37 +1,30 @@
 <template>
 <div class="container">
-    <center> 
         <div class="texto">Buscar por:</div>
         <br><br>
-        <div class="ordenar">
-            <div class="custom-control custom-radio">
-                <input id="nombre" Type="radio" class="custom-control-input muestraOculta" name="datos" checked="checked">
-                <label for="nombre" class="custom-control-label texto">Nombre del Alumno</label>
+            <div class="ordenar">         
+                <label><input type="radio" v-model="buscar" value="rut"> Rut</label>
+                <br>
+                <label><input type="radio" v-model="buscar" value="nombre"> Nombre</label>
+                <br>
+                <label><input type="radio" v-model="buscar" value="curso"> Curso</label>    
             </div>
-            <div class="custom-control custom-radio">
-                <input id="rut" Type="radio" class="custom-control-input muestraOculta" name="datos">
-                <label for="rut" class="custom-control-label texto">Rut</label>
+            <div v-if="buscar == 'rut'">
+                <input class="escribir" type="text" id="rut" name="rut" placeholder="xx.xxx.xxx-x">
             </div>
-            <div class="custom-control custom-radio">
-                <input  id="curso" Type="radio" class="custom-control-input muestraOculta" name="datos">
-                <label for="curso" class="custom-control-label texto">Curso</label>
+            <div v-if="buscar == 'nombre'">
+                <input class="escribir" type="text" id="nombre" name="nombre" placeholder="Ingrese Nombre del Alumno">
             </div>
-        </div>
-        <br><br>
-    
-        <div id="mostrarnombre" class="muestraDiv"><input type="text" placeholder="Ingrese Nombre del Alumno" size="30"></div>
-        <div id="mostrarrut" class="muestraDiv"><input type="text" placeholder="Ingrese Rut del Alumno" size="30"></div>
-        <div id="mostrarcurso" class="muestraDiv">
-            <select class="form-select form-select-sm" aria-label=".form-select-sm example" style="width:255px">
-                <option selected>Seleccione el curso</option>
-                <option value="1">1°A</option>
-                <option value="2">2°B</option>
-                <option value="3">Three</option>
-              </select>            
-        </div>
-    </center>
-    <Botones class="mt-4"/>
+            <div v-if="buscar == 'curso'">
+                <select class="escribir">
+                    <option selected>Seleccione Curso</option>
+                    <option value="1">Pre-Básica</option>
+                    <option value="2">Básica</option>
+                    <option value="3">Media</option>
+                    </select>
+            </div>
 
+    <Botones class="mt-4"/>
 </div>
 </template>
 
@@ -44,32 +37,13 @@ export default {
         Input,
         Botones,
     },
+    data() {
+        return {
+            buscar: null
+        }
+    },
 };
 
-// function clearSelection(current) {        
-//         var allInputs = document.getElementsByTagName("input");
-//         for (var a = 0; a < allInputs.length; a++) {
-//           if (allInputs[a].type == 'radio' && allInputs[a].className == 'muestraOculta') {
-//             allInputs[a].checked = false;
-//           }
-//         }
-  
-//         document.getElementById(current).checked = true;
-//       }
-  
-//       function mostrarDiv(divId, radioId) {
-//           var allDivs = document.getElementsByTagName("div");
-//           for (var a = 0; a < allDivs.length; a++) {
-//             if (allDivs[a].className == 'muestraDiv') {
-//               allDivs[a].style.display = 'none';
-//             }
-//           }
-  
-//           document.getElementById(divId).style.display = 'block';
-//           clearSelection(radioId);
-//       }  
-  
-//       mostrarDiv('mostrarrut', 'rut');
 
 </script>
 
@@ -77,31 +51,55 @@ export default {
 @import "../assets/scss/colores.scss";
 @import "../assets/scss/tipografia.scss";
 
-// input[type='radio']:checked:after {
-//         width: 10px;
-//         height: 10px;
-//         border-radius: 10px;
-//         position: relative;
-//         background-color: rgb(141, 228, 11) !important;
-//         content: '';
-//         display: inline-block;
-//         visibility: visible;
-//         border: 2px solid white;
-//     }
-
     .texto{
         color:$blanco;
         font-family: $inter;
         font-size: 16px;    
     }
-    .ordenar{
+     .ordenar{
         justify-items: center;
         text-align: left;
         display:inline-block;
-        color:$blanco;
     }
     .container{
         padding-top: 20px;
     }
+    input[type="radio"]:after {
+        width: 16px;
+        height: 16px;
+        border-radius: 16px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: $blanco;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid $blanco;
+    }
+
+    input[type="radio"]:checked:after {
+        width: 16px;
+        height: 16px;
+        border-radius: 16px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: $verde;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid $blanco;
+    }
+    input.escribir, select.escribir {
+        background: $blanco;
+        border: 1px solid $secundario;
+        border-radius: 10px 10px 10px 10px;
+        color: $gris;
+        font-size: 16px;
+        padding: 5px;
+        width:250px;
+    }
+
 
 </style>
