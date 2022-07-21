@@ -77,8 +77,8 @@ name: "Login",
       opacity: 30%;
       filter: saturate(0.5);
       display: flex;
-      margin-left: 68px;
-      margin-top: -180px;
+      margin-left: -12px;
+      margin-top: 6px;
   }
 }
 
