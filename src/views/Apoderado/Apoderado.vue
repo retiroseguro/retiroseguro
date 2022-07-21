@@ -17,7 +17,16 @@
                 <p>Estudiante</p>
                 <router-link to="/listaEstudiantes"><img class="icon_agregar" src="@/assets/img/agregar.png" alt="agregar"></router-link>
             </div>
-            <div class="tarjeta_blanca">
+            <Tarjeta
+                nombre="Felipe Rojas Sotomayor"
+                rut="22.543.032-6"
+                curso="8° B"
+                Profesor="Mónica Soto"
+                aEdit="/estudiante/:id"
+                aPerfil="/estudiante/:id"
+                foto=""
+                />
+            <!-- <div class="tarjeta_blanca">
                 <div class="foto_perfil">
                     <img src="@/assets/img/perfil_blanco.png" alt="foto perfil">
                 </div>
@@ -33,7 +42,7 @@
                 <div class="link">
                     <router-link to="/estudiante/:id">Ver Perfil</router-link>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="resumen_ret">
             <h5>Información Retirador(es)</h5>
@@ -62,7 +71,13 @@
 </template>
 
 <script>
+import Tarjeta from '../../components/Tarjeta.vue'
+
 export default {
+    name: 'Apoderado',
+    components: {
+        Tarjeta
+    }
     
 }
 </script>
