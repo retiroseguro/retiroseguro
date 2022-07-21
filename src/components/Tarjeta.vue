@@ -1,7 +1,7 @@
 <template>
     <div class="tarjeta_blanca">
         <div class="foto_perfil">
-            <img :src="require(foto)" alt="foto perfil">
+            <img src="" alt="foto perfil">
         </div>
         <div class="info">
             <p v-if="nombre" >Nombre: <span>{{nombre}}</span></p>
@@ -12,7 +12,7 @@
             <p v-if="parentesco" >Teléfono: <span>{{telefono}}</span></p>
         </div>
         <div v-if="aEdit" class="editar">
-            <router-link :to="aEdit"><img src="@/assets/img/editar.png" alt="editar"></router-link>
+            <router-link :to="aEdit"><img src="@/assets/img/edit.svg" alt="editar"></router-link>
         </div>
         <div class="link">
             <router-link :to="aPerfil">Ver Perfil</router-link>

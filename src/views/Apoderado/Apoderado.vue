@@ -2,7 +2,7 @@
     <main class="apoderado">
         <div class="apoderado__resumen">
             <div class="foto_perfil">
-                <img src="@/assets/img/perfil_blanco.png" alt="foto_perfil">
+                <img src="../../assets/img/perfil_blanco.png" alt="foto_perfil">
             </div>
             <div class="info_ap">
                 <p>Nombre: <span>Pedro Rojas Toledo</span></p>
@@ -24,7 +24,6 @@
                 Profesor="Mónica Soto"
                 aEdit="/estudiante/:id"
                 aPerfil="/estudiante/:id"
-                foto=""
                 />
             <!-- <div class="tarjeta_blanca">
                 <div class="foto_perfil">
@@ -52,7 +51,7 @@
             </div>
             <div class="tarjeta_blanca">
                 <div class="foto_perfil">
-                    <img src="@/assets/img/perfil_blanco.png" alt="foto perfil">
+                    <img src="../../assets/img/perfil_blanco.png" alt="foto perfil">
                 </div>
                 <div class="info_est">
                     <p>Nombre: <span>Javier Rojas Toledo</span></p>
