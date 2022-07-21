@@ -1,5 +1,5 @@
 <template>
-<div class="container">
+<div class="profesor">
         <div class="texto">Buscar por:</div>
         <br><br>
             <div class="ordenar">         
@@ -61,8 +61,8 @@ export default {
         text-align: left;
         display:inline-block;
     }
-    .container{
-        padding-top: 20px;
+    .profesor{
+
     }
     input[type="radio"]:after {
         width: 16px;

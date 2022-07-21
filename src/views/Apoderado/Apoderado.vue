@@ -65,6 +65,22 @@
                     <router-link to="/retirador/:id">Ver Perfil</router-link>
                 </div>
             </div>
+            <Tarjeta
+                nombre="Felipe Rojas Sotomayor"
+                rut="22.543.032-6"
+                curso="8° B"
+                Profesor="Mónica Soto"
+                aEdit="/estudiante/:id"
+                aPerfil="/estudiante/:id"
+                />
+                <Tarjeta
+                nombre="Felipe Rojas Sotomayor"
+                rut="22.543.032-6"
+                curso="8° B"
+                Profesor="Mónica Soto"
+                aEdit="/estudiante/:id"
+                aPerfil="/estudiante/:id"
+                />
         </div>
     </main>
 </template>

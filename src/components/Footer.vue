@@ -21,13 +21,14 @@ name: "Footer"
     align-items: center;
     color: $blanco;
     text-align: center;
-    height: 5.625vh;
-    width: 100vw;
-    position: fixed;
-    bottom: 0em;
+    height: 2.5rem;
+    width: 100%;
     background-color: $rse;
+    position: absolute;
+    bottom: 0;
 }
 #sigla{
     margin: 0;
+    padding: 0;
 }
 </style>

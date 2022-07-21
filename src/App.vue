@@ -32,10 +32,17 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   // text-align: center;
   color: $blanco;
+  padding-bottom: 2.5rem;
+    min-height: calc(100% - 2.5rem);
+    position: relative;
 }
-
+html {
+  min-height: 100%;
+  position: relative;
+}
 body {
   background-color: $primario;
+  margin: 0;
 }
 
 
