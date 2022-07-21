@@ -2,23 +2,29 @@
 <div class="container">
         <div class="texto">Buscar por:</div>
         <br><br>
-
-            <div>
-            <label><input type="radio" v-model="buscar" value="rut"> rut</label>
-            <label><input type="radio" v-model="buscar" value="nombre"> nombre</label>
-            <label><input type="radio" v-model="buscar" value="curso"> curso</label>
+            <div class="ordenar">         
+                <label><input type="radio" v-model="buscar" value="rut"> Rut</label>
+                <br>
+                <label><input type="radio" v-model="buscar" value="nombre"> Nombre</label>
+                <br>
+                <label><input type="radio" v-model="buscar" value="curso"> Curso</label>    
             </div>
             <div v-if="buscar == 'rut'">
-                <input type="text" id="rut" name="rut" placeholder="11.222.333-4">
+                <input class="escribir" type="text" id="rut" name="rut" placeholder="xx.xxx.xxx-x">
             </div>
             <div v-if="buscar == 'nombre'">
-                <input type="text" id="nombre" name="nombre" placeholder="Ingresa Nombre">
+                <input class="escribir" type="text" id="nombre" name="nombre" placeholder="Ingrese Nombre del Alumno">
             </div>
             <div v-if="buscar == 'curso'">
-            curso
+                <select class="escribir">
+                    <option selected>Seleccione Curso</option>
+                    <option value="1">Pre-Básica</option>
+                    <option value="2">Básica</option>
+                    <option value="3">Media</option>
+                    </select>
             </div>
-    <Botones class="mt-4"/>
 
+    <Botones class="mt-4"/>
 </div>
 </template>
 
@@ -38,30 +44,6 @@ export default {
     },
 };
 
-// function clearSelection(current) {        
-//         var allInputs = document.getElementsByTagName("input");
-//         for (var a = 0; a < allInputs.length; a++) {
-//           if (allInputs[a].type == 'radio' && allInputs[a].className == 'muestraOculta') {
-//             allInputs[a].checked = false;
-//           }
-//         }
-  
-//         document.getElementById(current).checked = true;
-//       }
-  
-//       function mostrarDiv(divId, radioId) {
-//           var allDivs = document.getElementsByTagName("div");
-//           for (var a = 0; a < allDivs.length; a++) {
-//             if (allDivs[a].className == 'muestraDiv') {
-//               allDivs[a].style.display = 'none';
-//             }
-//           }
-  
-//           document.getElementById(divId).style.display = 'block';
-//           clearSelection(radioId);
-//       }  
-  
-//       mostrarDiv('mostrarrut', 'rut');
 
 </script>
 
@@ -69,31 +51,55 @@ export default {
 @import "../assets/scss/colores.scss";
 @import "../assets/scss/tipografia.scss";
 
-// input[type='radio']:checked:after {
-//         width: 10px;
-//         height: 10px;
-//         border-radius: 10px;
-//         position: relative;
-//         background-color: rgb(141, 228, 11) !important;
-//         content: '';
-//         display: inline-block;
-//         visibility: visible;
-//         border: 2px solid white;
-//     }
-
     .texto{
         color:$blanco;
         font-family: $inter;
         font-size: 16px;    
     }
-    .ordenar{
+     .ordenar{
         justify-items: center;
         text-align: left;
         display:inline-block;
-        color:$blanco;
     }
     .container{
         padding-top: 20px;
     }
+    input[type="radio"]:after {
+        width: 16px;
+        height: 16px;
+        border-radius: 16px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: $blanco;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid $blanco;
+    }
+
+    input[type="radio"]:checked:after {
+        width: 16px;
+        height: 16px;
+        border-radius: 16px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: $verde;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid $blanco;
+    }
+    input.escribir, select.escribir {
+        background: $blanco;
+        border: 1px solid $secundario;
+        border-radius: 10px 10px 10px 10px;
+        color: $gris;
+        font-size: 16px;
+        padding: 5px;
+        width:250px;
+    }
+
 
 </style>
