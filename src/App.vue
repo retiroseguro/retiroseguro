@@ -1,7 +1,10 @@
 <template>
   <div id="app">
     <Menu/>
+    <div class="container_views">
     <router-view/>
+    </div>
+
     <Footer/>
   </div>
 </template>
@@ -36,6 +39,9 @@ export default {
 
 body {
   background-color: $primario;
+}
+.container_views {
+  padding: 2rem;
 }
 
 

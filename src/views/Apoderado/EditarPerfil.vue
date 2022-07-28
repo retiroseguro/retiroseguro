@@ -63,7 +63,13 @@
     </div>
 <br>
     <div>
-        <p>SUBIR FOTO</p>
+        <label class="">Foto</label> <br />
+        <input
+            type="file"
+            name="foto"
+            id="foto"
+            placeholder="fot.jpg/png"
+        />
     </div>
 
     <div class="edit_boton">
