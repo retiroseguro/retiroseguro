@@ -1,9 +1,11 @@
 <template>
     <main class="apoderado">
         <div class="apoderado__resumen">
-            <div class="foto_perfil">
-                <img src="../../assets/img/perfil_blanco.png" alt="foto_perfil">
+            <div class="perfil">
+                <img class="foto_perfil" src="../../assets/img/perfil_blanco.png" alt="foto_perfil">
+                <router-link to="apoderado/editar-perfil"><img class="agregar_foto" src="../../assets/img/camera.svg" alt=""></router-link>
             </div>
+
             <div class="info_ap">
                 <p>Nombre: <span>Pedro Rojas Toledo</span></p>
                 <p>RUT: <span>9.467.876-9</span></p> 
@@ -53,6 +55,7 @@
                 <div class="foto_perfil">
                     <img src="../../assets/img/perfil_blanco.png" alt="foto perfil">
                 </div>
+
                 <div class="info_est">
                     <p>Nombre: <span>Javier Rojas Toledo</span></p>
                     <p>RUT: <span>9.467.876--9</span></p> 
@@ -112,17 +115,21 @@ h5{
 }
 
 .apoderado__resumen {
-    padding-top: 2.5rem;
     padding-bottom: 1rem;
     color: $blanco;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-.foto_perfil img {
+.foto_perfil {
     width: 12.5vh;
     height: 12.5vh;
     border-radius: 50%;
+}
+.agregar_foto {
+    position: relative;
+    bottom: 21px;
+    width: 1.3rem;
 }
 .info_ap p, .info_est p {
     font-weight: bold;

@@ -1,7 +1,10 @@
 <template>
   <div id="app">
     <Menu/>
+    <div class="container_views">
     <router-view/>
+    </div>
+
     <Footer/>
   </div>
 </template>
@@ -43,6 +46,9 @@ html {
 body {
   background-color: $primario;
   margin: 0;
+}
+.container_views {
+  padding: 2rem;
 }
 
 
