@@ -24,18 +24,18 @@
                     </select>
             </div>
 
-    <Botones class="mt-4"/>
+    <Boton texto="BUSCAR" class="mt-4"/>
 </div>
 </template>
 
 <script>
 import Input from "../components/Input.vue";
-import Botones from "../components/Botones.vue";
+import Boton from "../components/Boton_md.vue";
 export default {
     name:"Profesor",
     components:{
         Input,
-        Botones,
+        Boton,
     },
     data() {
         return {

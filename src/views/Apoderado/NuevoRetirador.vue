@@ -66,7 +66,7 @@
     </div>
 
     <div class="edit_boton">
-        <router-link to="/Apoderado"><Botones /></router-link>
+        <router-link to="/Apoderado"><Boton texto="REGISTRAR" /></router-link>
     </div>
 
     
@@ -75,12 +75,12 @@
 </template>
 
 <script>
-import Botones from "../../components/Botones.vue";
+import Boton from "../../components/Boton_md.vue";
 
 export default {
 name: "NuevoRetirador",
 components: {
-    Botones,
+    Boton,
     },
 };
 </script>
