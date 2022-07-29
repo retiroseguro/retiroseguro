@@ -3,18 +3,18 @@
     <main class="admin">
       <p>Buscar apoderado</p>
       <Input />
-      <router-link to="/Apoderado"><Botones class="mt-4"/></router-link>
+      <router-link to="/Apoderado"><Boton texto="BUSCAR" class="mt-4"/></router-link>
     </main>
   </div>
 </template>
 <script>
 import Input from "../../components/Input.vue";
-import Botones from "../../components/Botones.vue";
+import Boton from "../../components/Boton_md.vue";
 export default {
   name: "Admin",
   components: {
     Input,
-    Botones,
+    Boton,
   },
 };
 </script>

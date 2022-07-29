@@ -5,7 +5,7 @@
     <p class="login__p_pass">Contraseña</p>
       <input type="password" placeholder="xxxxxx">
       <div class="login__botones_posicion">
-        <router-link to="/Apoderado"><Botones/></router-link>
+        <router-link to="/Apoderado"><boton texto="INGRESAR"/></router-link>
       </div>
       
     <div>
@@ -16,13 +16,13 @@
 
 <script>
 import Input from '../components/Input.vue'
-import Botones from '../components/Botones.vue'
+import Boton from '@/components/Boton_md.vue'
 
 export default {
 name: "Login",
   components: {
     Input,
-    Botones
+    Boton
   }
 }
 </script>

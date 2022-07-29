@@ -24,6 +24,10 @@ const routes = [
       {
         path:'editarapoderado',
         component: () => import(/* webpackChunkName: "about" */ '../views/Administrador/EditarApoderado.vue'),
+      },
+      {
+        path:'crearperfil',
+        component: () => import(/* webpackChunkName: "about" */ '../views/Administrador/CrearPerfil.vue'),
       }
     ]
   },
