@@ -1,6 +1,6 @@
 <template>
 <div class="editarperfil">
-    <h2>Actualizacion de datos personales</h2>
+    <h2>Subir foto perfil</h2>
 
     <form class="form"> 
     <!-- datos fijos solo se cambia la foto -->
