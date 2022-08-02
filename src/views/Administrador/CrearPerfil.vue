@@ -5,6 +5,7 @@
             <h2>Cuenta Nueva</h2>
                 <label class="edita_tipo_cuenta">Tipo de Cuenta:</label> <br>
                 <select v-model="cuenta" class="escribir">
+                    <option value="" hidden disabled>Seleccione Perfil</option>
                     <option  value="1">Profesor</option>
                     <option  value="2">Apoderado</option>
                     <option  value="3">Alumno</option>
@@ -13,7 +14,7 @@
 
         <br>
 
-    <form class="form">
+    <form v-if="cuenta != ''" class="form">
     <div>
         <label for="nombre" class="form_label">Nombre</label> <br />
         <input 
@@ -133,13 +134,16 @@ components: {
     },
     data() { 
         return {
-        cuenta: null,
+        cuenta: "",
         }
     }   
 };
 </script>
 
 <style lang="scss">
+@import "@/assets/scss/tipografia.scss";
+@import "@/assets/scss/colores.scss";
+
 @media only screen and (min-width: 320px) {
 form {
     display: flex;
@@ -179,6 +183,15 @@ input {
 .curso_asignado {
     margin-right: 10.8rem;
 }
+select.escribir {
+        background: $blanco;
+        border: 1px solid $secundario;
+        border-radius: 10px 10px 10px 10px;
+        color: $gris;
+        font-size: 16px;
+        padding: 5px;
+        width:250px;
+    }
 }
 @media only screen and (min-width: 768px) {
 

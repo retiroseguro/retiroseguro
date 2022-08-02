@@ -58,7 +58,7 @@
 
                 <div class="info_est">
                     <p>Nombre: <span>Javier Rojas Toledo</span></p>
-                    <p>RUT: <span>9.467.876--9</span></p> 
+                    <p>RUT: <span>9.467.876-9</span></p> 
                     <p>Teléfono: <span>+56 9 5784 7366</span></p>
                 </div>
                 <div class="editar">
